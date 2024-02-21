@@ -1,1 +1,38 @@
-/*css go here*/
+body {
+  font-family: "Archivo", sans-serif;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100vw;
+  padding: 32px;
+}
+
+.container.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 30vh;
+}
+
+.container.homepage {
+  width: 100vw;
+}
+
+.header-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-name {
+  margin-bottom: 20px;
+}
