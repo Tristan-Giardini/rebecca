@@ -33,6 +33,34 @@ a {
   flex-direction: column;
 }
 
-.header-name {
+.header-link.name {
   margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+.collections {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: row;
+}
+
+.painting {
+  width: 200px;
+  margin: 10px;
+}
+
+.f-thumbs__viewport {
+  display: none;
+}
+
+.fancybox__toolbar__column.is-left {
+  display: none;
+}
+
+div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
+  display: none;
 }

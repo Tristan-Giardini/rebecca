@@ -4,11 +4,15 @@ const Header = () => {
   return (
     <div className="container header">
       <div className="header-contents">
-        <a className="header-name" href="/">
+        <a className="header-link name bold" href="/">
           Rebecca Storm
         </a>
-        <a href="/collection">Collection</a>
-        <a href="/contact">Contact</a>
+        <a className="header-link" href="/collection">
+          Collection
+        </a>
+        <a className="header-link" href="/contact">
+          Contact
+        </a>
       </div>
     </div>
   );
