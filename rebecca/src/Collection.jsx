@@ -5,6 +5,12 @@ import Fancybox from "./Fancybox";
 const Collection = () => {
   console.log(Collections);
 
+  const handleCaption = (index) => {
+    if (index === 1) {
+      return "";
+    }
+  };
+
   return (
     <>
       <Fancybox
@@ -16,10 +22,15 @@ const Collection = () => {
           },
         }}
       >
-        {Collections.map((collection) => {
+        {Collections.map((collection, index) => {
           return (
             // <div className="collections">
-            <a data-fancybox="gallery" href={collection.painting}>
+            <a
+              index={index}
+              data-fancybox="gallery"
+              data-caption={handleCaption(index)}
+              href={collection.painting}
+            >
               <img
                 alt="painting title"
                 className="painting"
