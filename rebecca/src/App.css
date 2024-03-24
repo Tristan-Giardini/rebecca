@@ -11,8 +11,8 @@ a {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  max-width: 100vw;
+  /* width: 100%;
+  max-width: 100vw; */
   padding: 32px;
 }
 
@@ -21,7 +21,7 @@ a {
   left: 0;
   top: 0;
   height: 100vh;
-  width: 30vh;
+  width: 30vw;
 }
 
 .container.homepage {
@@ -35,6 +35,7 @@ a {
 
 .header-link.name {
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .bold {
@@ -63,4 +64,55 @@ a {
 
 div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
   display: none;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-icon {
+  all: unset;
+  display: none;
+}
+
+.hamburger-icon:focus {
+  outline: revert;
+}
+
+@media screen and (max-width: 600px) {
+  .header-list {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    width: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container.header {
+    position: unset !important;
+    width: 100%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .header {
+    height: 20vh !important;
+    /* width: 100vw !important; */
+  }
+
+  .painting {
+    width: 100%;
+  }
 }
