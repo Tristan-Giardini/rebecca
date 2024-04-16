@@ -14,6 +14,7 @@ a {
   /* width: 100%;
   max-width: 100vw; */
   padding: 32px;
+  position: relative;
 }
 
 .container.header {
@@ -81,8 +82,88 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
 }
 
 @media screen and (max-width: 600px) {
+  @keyframes dropDownWrapper {
+    0% {
+      top: 0px;
+      transform: translateY(0);
+    }
+    100% {
+      top: 100px;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes dropDownWrapperReverse {
+    0% {
+      top: 100px;
+      transform: translateY(0);
+    }
+    100% {
+      top: 0px;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes dropDown {
+    0% {
+      top: -300px;
+      transform: translateY(0);
+    }
+    100% {
+      top: -107px;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes dropDownReverse {
+    0% {
+      top: -107px;
+      transform: translateY(0);
+    }
+    100% {
+      top: -300px;
+      transform: translateY(0);
+    }
+  }
+
   .header-list {
     display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .mobile-nav.open {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    top: 0px;
+    left: -8px;
+    width: 107%;
+    animation: dropDown 0.5s forwards;
+  }
+
+  .mobile-na.open.closed {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    top: 0px;
+    left: -8px;
+    width: 107%;
+    animation: dropDownReverse 0.5s forwards;
+  }
+
+  .wrapper.nav-open {
+    /* top: 100px !important; */
+    animation: dropDownWrapper 0.4s forwards;
+  }
+
+  .mobile-link {
+    color: white;
+    padding: 20px 40px;
   }
 
   .hamburger-icon {
@@ -105,6 +186,8 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
 
   .wrapper {
     flex-direction: column;
+    /* position: relative; */
+    animation: dropDownWrapperReverse 0.4s forwards;
   }
 
   .header {
