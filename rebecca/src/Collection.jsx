@@ -7,7 +7,7 @@ const Collection = () => {
 
   const handleCaption = (index) => {
     if (index === 1) {
-      return "";
+      return "This is my title This is my medium This is my year";
     }
   };
 

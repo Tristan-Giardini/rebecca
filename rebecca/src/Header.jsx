@@ -1,18 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import React from "react";
 import HamburgerNav from "./assets/HamburgerNav";
+import useSize from "./hooks/useSize";
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
+  const screenWidth = useSize();
+
+  console.log(screenWidth[0]);
 
   const handleClick = () => {
-    // console.log("click");
     setMobileNav(!mobileNav);
   };
 
   useEffect(() => {
     const wrapper = document.querySelector(".wrapper");
-    // const mobile = document.querySelector(".mobile-nav")
+
     if (mobileNav) {
       wrapper.classList.add("nav-open");
     } else {
@@ -23,8 +26,6 @@ const Header = () => {
       wrapper.classList.remove("nav-open");
     };
   }, [mobileNav]);
-
-  // console.log(mobileNav);
 
   return (
     <div className="container header">
@@ -43,14 +44,18 @@ const Header = () => {
             Contact
           </a>
         </div>
-        <div className={mobileNav ? "mobile-nav open" : "mobile-nav"}>
-          <a className="mobile-link" href="/collection">
-            Collection
-          </a>
-          <a className="mobile-link" href="/contact">
-            Contact
-          </a>
-        </div>
+        {screenWidth[0] < 600 ? (
+          <div className={mobileNav ? "mobile-nav open" : "mobile-nav"}>
+            <a className="mobile-link" href="/collection">
+              Collection
+            </a>
+            <a className="mobile-link" href="/contact">
+              Contact
+            </a>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

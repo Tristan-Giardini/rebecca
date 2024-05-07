@@ -1,6 +1,7 @@
 body {
   font-family: "Archivo", sans-serif;
   font-weight: 200;
+  margin: 0px;
 }
 
 a {
@@ -140,30 +141,33 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
     flex-direction: column;
     background-color: black;
     top: 0px;
-    left: -8px;
-    width: 107%;
+    left: 0px;
+    width: 100%;
     animation: dropDown 0.5s forwards;
   }
 
-  .mobile-na.open.closed {
+  .mobile-nav.closed {
     position: absolute;
     display: flex;
     flex-direction: column;
     background-color: black;
     top: 0px;
-    left: -8px;
-    width: 107%;
+    left: 0px;
+    width: 100%;
     animation: dropDownReverse 0.5s forwards;
   }
 
   .wrapper.nav-open {
-    /* top: 100px !important; */
     animation: dropDownWrapper 0.4s forwards;
   }
 
   .mobile-link {
     color: white;
-    padding: 20px 40px;
+    padding: 20px 30px;
+  }
+
+  .mobile-link:hover {
+    color: grey;
   }
 
   .hamburger-icon {
@@ -186,16 +190,22 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
 
   .wrapper {
     flex-direction: column;
-    /* position: relative; */
     animation: dropDownWrapperReverse 0.4s forwards;
   }
 
   .header {
     height: 20vh !important;
-    /* width: 100vw !important; */
   }
 
   .painting {
     width: 100%;
+  }
+
+  .f-button.is-next {
+    display: none !important;
+  }
+
+  .f-button.is-prev {
+    display: none !important;
   }
 }
