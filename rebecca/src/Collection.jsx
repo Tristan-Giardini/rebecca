@@ -19,7 +19,7 @@ const Collection = () => {
   };
 
   return (
-    <>
+    <div className="collection-wrapper">
       <Fancybox
         options={{
           Carousel: {
@@ -31,7 +31,6 @@ const Collection = () => {
       >
         {Collections.map((collection, index) => {
           return (
-            // <div className="collections">
             <a
               index={index}
               data-fancybox="gallery"
@@ -39,19 +38,19 @@ const Collection = () => {
               href={collection.painting}
             >
               <img
+                loading="lazy"
                 alt="painting title"
                 className={collection.className}
                 src={collection.painting}
               />
             </a>
-            // </div>
           );
         })}
       </Fancybox>
-      <div className="scroll-to-top" onClick={handleScroll}>
-        Scroll to top
+      <div className="scroll-to-top">
+        <p onClick={handleScroll}>Scroll to top</p>
       </div>
-    </>
+    </div>
   );
 };
 export default Collection;

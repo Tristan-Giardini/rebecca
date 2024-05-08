@@ -24,6 +24,7 @@ a {
   top: 0;
   height: 100vh;
   width: 30vw;
+  min-width: 200px;
 }
 
 .container.homepage {
@@ -38,6 +39,10 @@ a {
 .header-link.name {
   margin-bottom: 20px;
   white-space: nowrap;
+}
+
+.header-link.name:hover {
+  color: black;
 }
 
 .bold {
@@ -82,6 +87,10 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
   outline: revert;
 }
 
+.hamburger-icon:hover {
+  cursor: pointer;
+}
+
 .homepage-pic {
   width: 100%;
   max-width: 725px;
@@ -89,7 +98,17 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
 }
 
 .scroll-to-top {
-  display: none;
+  display: none !important;
+}
+
+.collection-wrapper div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+a:hover {
+  color: grey;
 }
 
 @media screen and (max-width: 600px) {
@@ -104,7 +123,7 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
     }
   }
 
-  @keyframes dropDownWrapperReverse {
+  /* @keyframes dropDownWrapperReverse {
     0% {
       top: 100px;
       transform: translateY(0);
@@ -113,7 +132,7 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
       top: 0px;
       transform: translateY(0);
     }
-  }
+  } */
 
   @keyframes dropDown {
     0% {
@@ -149,14 +168,14 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
     position: absolute;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: white;
     top: 0px;
     left: 0px;
     width: 100%;
     animation: dropDown 0.5s forwards;
   }
 
-  .mobile-nav.closed {
+  /* .mobile-nav.closed {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -165,19 +184,15 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
     left: 0px;
     width: 100%;
     animation: dropDownReverse 0.5s forwards;
-  }
+  } */
 
   .wrapper.nav-open {
     animation: dropDownWrapper 0.4s forwards;
   }
 
   .mobile-link {
-    color: white;
+    color: black;
     padding: 20px 30px;
-  }
-
-  .mobile-link:hover {
-    color: grey;
   }
 
   .hamburger-icon {
@@ -230,8 +245,14 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
   }
 
   .scroll-to-top {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
+  }
+
+  .scroll-to-top p:hover {
+    color: grey;
+    cursor: pointer;
   }
 }

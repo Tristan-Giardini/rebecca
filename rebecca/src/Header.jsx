@@ -46,12 +46,12 @@ const Header = () => {
         </div>
         {screenWidth[0] < 600 ? (
           <div className={mobileNav ? "mobile-nav open" : "mobile-nav"}>
-            <a className="mobile-link" href="/collection">
-              Collection
-            </a>
-            <a className="mobile-link" href="/contact">
-              Contact
-            </a>
+            <div className="mobile-link">
+              <a href="/collection">Collection</a>
+            </div>
+            <div className="mobile-link">
+              <a href="/contact">Contact</a>
+            </div>
           </div>
         ) : (
           ""

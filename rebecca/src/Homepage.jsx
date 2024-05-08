@@ -5,7 +5,12 @@ const Homepage = () => {
   return (
     <div className="container homepage">
       <>
-        <img src={exhibitionviews} alt="exhibition" className="homepage-pic" />
+        <img
+          src={exhibitionviews}
+          loading="lazy"
+          alt="exhibition"
+          className="homepage-pic"
+        />
       </>
     </div>
   );
