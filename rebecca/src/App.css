@@ -236,13 +236,13 @@ a:hover {
     margin: 0px;
   }
 
-  .is-next {
+  /* .is-next {
     display: none !important;
   }
 
   .is-prev {
     display: none !important;
-  }
+  } */
 
   .scroll-to-top {
     display: flex !important;
