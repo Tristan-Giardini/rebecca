@@ -1,5 +1,5 @@
-import nineteenninetysevena from "./currants.jpg";
-import nineteenninetysevenb from "./1997relative.jpg";
+import nineteenninetysevena from "./1997afull.jpg";
+import nineteenninetysevenb from "./1997bfull.jpg";
 import lonelymouthfull from "./lonelymouthfull.jpg";
 import properties1 from "./properties1full.jpg";
 import properties2 from "./properties2full.jpg";

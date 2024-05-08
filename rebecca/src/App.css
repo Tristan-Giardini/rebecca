@@ -23,8 +23,7 @@ a {
   left: 0;
   top: 0;
   height: 100vh;
-  width: 30vw;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .container.homepage {
@@ -105,6 +104,7 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 900px;
 }
 
 a:hover {
@@ -236,13 +236,17 @@ a:hover {
     margin: 0px;
   }
 
-  /* .is-next {
+  .f-button[title^="Close"] {
+    display: flex !important;
+  }
+
+  .f-button.is-next {
     display: none !important;
   }
 
-  .is-prev {
+  .f-button.is-prev {
     display: none !important;
-  } */
+  }
 
   .scroll-to-top {
     display: flex !important;
