@@ -1,5 +1,5 @@
 import React from "react";
-import exhibitionviews from "./assets/exhibitionviews.jpg";
+import exhibitionviews from "./assets/exhibitionviewsjpg.jpg";
 
 const Homepage = () => {
   return (

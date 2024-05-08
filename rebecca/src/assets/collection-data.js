@@ -1,10 +1,11 @@
 import nineteenninetysevena from "./currants.jpg";
-import nineteenninetysevenb from "./pulse.png";
+import nineteenninetysevenb from "./1997relative.jpg";
 import lonelymouthfull from "./lonelymouthfull.jpg";
 import properties1 from "./properties1full.jpg";
 import properties2 from "./properties2full.jpg";
 import properties3 from "./properties3full.jpg";
 import softnessfades from "./softenessfades.jpg";
+import pulsefull from "./pulsefull.jpg";
 
 const Collections = [
   {
@@ -14,6 +15,10 @@ const Collections = [
   },
   {
     painting: nineteenninetysevenb,
+    className: "painting",
+  },
+  {
+    painting: pulsefull,
     className: "painting",
   },
   {

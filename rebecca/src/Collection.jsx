@@ -18,6 +18,8 @@ const Collection = () => {
             infinite: false,
             defaultDisplay: "flex",
             wheel: false,
+            modal: false,
+            closeButton: true,
           },
         }}
       >
