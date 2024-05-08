@@ -13,24 +13,31 @@ import vango from "./vango.jpeg";
 const Collections = [
   {
     painting: nineteenninetysevena,
+    className: "painting",
   },
   {
     painting: nineteenninetysevenb,
+    className: "painting",
   },
   {
     painting: lonelymouthfull,
+    className: "painting",
   },
   {
     painting: properties1,
+    className: "painting series",
   },
   {
     painting: properties2,
+    className: "painting series",
   },
   {
     painting: properties3,
+    className: "painting",
   },
   {
     painting: softnessfades,
+    className: "painting",
   },
 ];
 

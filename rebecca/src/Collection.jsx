@@ -11,6 +11,13 @@ const Collection = () => {
     }
   };
 
+  const handleScroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <Fancybox
@@ -33,7 +40,7 @@ const Collection = () => {
             >
               <img
                 alt="painting title"
-                className="painting"
+                className={collection.className}
                 src={collection.painting}
               />
             </a>
@@ -41,6 +48,9 @@ const Collection = () => {
           );
         })}
       </Fancybox>
+      <div className="scroll-to-top" onClick={handleScroll}>
+        Scroll to top
+      </div>
     </>
   );
 };

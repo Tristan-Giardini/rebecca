@@ -7,7 +7,7 @@ import Collection from "./Collection";
 
 function App() {
   return (
-    <div className="wrapper">
+    <div className="wrapper" id="wrapper">
       <Header />
       <BrowserRouter>
         <Routes>

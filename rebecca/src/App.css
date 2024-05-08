@@ -27,7 +27,7 @@ a {
 }
 
 .container.homepage {
-  width: 100vw;
+  width: 100%;
 }
 
 .header-contents {
@@ -82,6 +82,16 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
   outline: revert;
 }
 
+.homepage-pic {
+  width: 100%;
+  max-width: 725px;
+  margin: 10px;
+}
+
+.scroll-to-top {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   @keyframes dropDownWrapper {
     0% {
@@ -89,7 +99,7 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
       transform: translateY(0);
     }
     100% {
-      top: 100px;
+      top: 113px;
       transform: translateY(0);
     }
   }
@@ -111,12 +121,12 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
       transform: translateY(0);
     }
     100% {
-      top: -107px;
+      top: -113px;
       transform: translateY(0);
     }
   }
 
-  @keyframes dropDownReverse {
+  /* @keyframes dropDownReverse {
     0% {
       top: -107px;
       transform: translateY(0);
@@ -125,7 +135,7 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
       top: -300px;
       transform: translateY(0);
     }
-  }
+  } */
 
   .header-list {
     display: none;
@@ -199,6 +209,16 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
 
   .painting {
     width: 100%;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+
+  .painting.series {
+    margin-bottom: 10px;
+  }
+
+  .homepage-pic {
+    margin: 0px;
   }
 
   .f-button.is-next {
@@ -207,5 +227,11 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
 
   .f-button.is-prev {
     display: none !important;
+  }
+
+  .scroll-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
