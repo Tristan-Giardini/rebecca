@@ -236,11 +236,11 @@ a:hover {
     margin: 0px;
   }
 
-  .f-button.is-next {
+  .is-next {
     display: none !important;
   }
 
-  .f-button.is-prev {
+  .is-prev {
     display: none !important;
   }
 

@@ -3,14 +3,6 @@ import Collections from "./assets/collection-data";
 import Fancybox from "./Fancybox";
 
 const Collection = () => {
-  console.log(Collections);
-
-  const handleCaption = (index) => {
-    if (index === 1) {
-      return "This is my title This is my medium This is my year";
-    }
-  };
-
   const handleScroll = () => {
     window.scrollTo({
       top: 0,
@@ -34,7 +26,7 @@ const Collection = () => {
             <a
               index={index}
               data-fancybox="gallery"
-              data-caption={handleCaption(index)}
+              data-caption={collection.caption}
               href={collection.painting}
             >
               <img
