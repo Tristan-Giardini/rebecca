@@ -266,10 +266,14 @@ a:hover {
 
   .scroll-to-top {
     display: flex !important;
-    align-items: center !important;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+
+  .scroll-to-top svg {
+    width: 20px;
   }
 
   .scroll-to-top p:hover {
