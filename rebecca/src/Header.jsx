@@ -37,9 +37,18 @@ const Header = () => {
           <HamburgerNav />
         </button>
         <div className="header-list">
-          <a className="header-link" href="/collection">
-            Collection
+          <a className="header-link" href="/collection/fossil-ephemeral">
+            Fossil Ephemeral
           </a>
+          <a className="header-link" href="/collection/miscellaneous">
+            Miscellaneous
+          </a>
+          <a className="header-link" href="/collection/commissions">
+            Commissions
+          </a>
+          <div className="mobile-link">
+            <a href="/about">About</a>
+          </div>
           <a className="header-link" href="/contact">
             Contact
           </a>
@@ -47,7 +56,16 @@ const Header = () => {
         {screenWidth[0] < 600 ? (
           <div className={mobileNav ? "mobile-nav open" : "mobile-nav"}>
             <div className="mobile-link">
-              <a href="/collection">Collection</a>
+              <a href="/collection/fossil-ephemeral">Fossil Ephemeral</a>
+            </div>
+            <div className="mobile-link">
+              <a href="/collection/miscellaneous">Miscellaneous</a>
+            </div>
+            <div className="mobile-link">
+              <a href="/collection/commissions">Commissions</a>
+            </div>
+            <div className="mobile-link">
+              <a href="/about">About</a>
             </div>
             <div className="mobile-link">
               <a href="/contact">Contact</a>

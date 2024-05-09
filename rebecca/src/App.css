@@ -33,6 +33,7 @@ a {
 .header-contents {
   display: flex;
   flex-direction: column;
+  gap: ;
 }
 
 .header-link.name {
@@ -75,6 +76,7 @@ div.fancybox__toolbar__column.is-right > :nth-child(-n + 4) {
 .header-list {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .hamburger-icon {

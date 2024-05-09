@@ -4,6 +4,8 @@ import Homepage from "./Homepage";
 import Contact from "./Contact";
 import Header from "./Header";
 import Collection from "./Collection";
+import Collections from "./assets/collection-data";
+import About from "./About";
 
 function App() {
   return (
@@ -12,7 +14,19 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/collection" element={<Collection />} />
+          <Route
+            path="collection/fossil-ephemeral"
+            element={<Collection collections={Collections.FossilEphemeral} />}
+          />
+          <Route
+            path="collection/commissions"
+            element={<Collection collections={Collections.Commissions} />}
+          />
+          <Route
+            path="collection/miscellaneous"
+            element={<Collection collections={Collections.Miscellaneous} />}
+          />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>

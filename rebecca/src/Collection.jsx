@@ -1,8 +1,7 @@
 import React from "react";
-import Collections from "./assets/collection-data";
 import Fancybox from "./Fancybox";
 
-const Collection = () => {
+const Collection = ({ collections }) => {
   const handleScroll = () => {
     window.scrollTo({
       top: 0,
@@ -15,7 +14,7 @@ const Collection = () => {
       <Fancybox
         options={{
           Carousel: {
-            infinite: false,
+            infinite: true,
             defaultDisplay: "flex",
             wheel: false,
             modal: false,
@@ -23,7 +22,7 @@ const Collection = () => {
           },
         }}
       >
-        {Collections.map((collection, index) => {
+        {collections.map((collection, index) => {
           return (
             <a
               index={index}
