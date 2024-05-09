@@ -1,5 +1,6 @@
 import React from "react";
 import Fancybox from "./Fancybox";
+import UpArrow from "./assets/UpArrow";
 
 const Collection = ({ collections, exhibitionText }) => {
   const handleScroll = () => {
@@ -50,8 +51,8 @@ const Collection = ({ collections, exhibitionText }) => {
       ) : (
         ""
       )}
-      <div className="scroll-to-top">
-        <p onClick={handleScroll}>Scroll to top</p>
+      <div className="scroll-to-top" onClick={handleScroll}>
+        <UpArrow />
       </div>
     </div>
   );
