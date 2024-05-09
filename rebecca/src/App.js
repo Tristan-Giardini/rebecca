@@ -16,15 +16,20 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route
             path="collection/fossil-ephemeral"
-            element={<Collection collections={Collections.FossilEphemeral} />}
+            element={
+              <Collection
+                collections={Collections.fossilEphemeral}
+                exhibitionText={Collections.feExhibitionText}
+              />
+            }
           />
           <Route
             path="collection/commissions"
-            element={<Collection collections={Collections.Commissions} />}
+            element={<Collection collections={Collections.commissions} />}
           />
           <Route
             path="collection/miscellaneous"
-            element={<Collection collections={Collections.Miscellaneous} />}
+            element={<Collection collections={Collections.miscellaneous} />}
           />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

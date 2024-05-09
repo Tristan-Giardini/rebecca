@@ -1,7 +1,7 @@
 import React from "react";
 import Fancybox from "./Fancybox";
 
-const Collection = ({ collections }) => {
+const Collection = ({ collections, exhibitionText }) => {
   const handleScroll = () => {
     window.scrollTo({
       top: 0,
@@ -40,6 +40,16 @@ const Collection = ({ collections }) => {
           );
         })}
       </Fancybox>
+      {exhibitionText ? (
+        <div className="exhibition-text">
+          <p>{exhibitionText.pOne}</p>
+          <p>{exhibitionText.pTwo}</p>
+          <p>{exhibitionText.pThree}</p>
+          <p>{exhibitionText.pFour}</p>
+        </div>
+      ) : (
+        ""
+      )}
       <div className="scroll-to-top">
         <p onClick={handleScroll}>Scroll to top</p>
       </div>

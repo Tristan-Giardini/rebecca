@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import React from "react";
 import HamburgerNav from "./assets/HamburgerNav";
 import useSize from "./hooks/useSize";
+import CloseNav from "./assets/CloseNav";
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -9,8 +10,12 @@ const Header = () => {
 
   console.log(screenWidth[0]);
 
-  const handleClick = () => {
-    setMobileNav(!mobileNav);
+  const handleOpen = () => {
+    setMobileNav(true);
+  };
+
+  const handleClose = () => {
+    setMobileNav(false);
   };
 
   useEffect(() => {
@@ -27,15 +32,23 @@ const Header = () => {
     };
   }, [mobileNav]);
 
+  console.log(mobileNav);
+
   return (
     <div className="container header">
       <div className="header-contents">
         <a className="header-link name bold" href="/">
           Rebecca Storm
         </a>
-        <button className="hamburger-icon" onClick={handleClick}>
-          <HamburgerNav />
-        </button>
+        {mobileNav ? (
+          <button className="close-icon" onClick={handleClose}>
+            <CloseNav />
+          </button>
+        ) : (
+          <button className="hamburger-icon" onClick={handleOpen}>
+            <HamburgerNav />
+          </button>
+        )}
         <div className="header-list">
           <a className="header-link" href="/collection/fossil-ephemeral">
             Fossil Ephemeral

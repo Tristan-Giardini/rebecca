@@ -2,9 +2,9 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-wrapper">
       <div>rebeccastorm@gmail.com</div>
-      <div>@rebeccaastorm</div>
+      <a href="https://www.instagram.com/rebeccaastorm/">@rebeccaastorm</a>
     </div>
   );
 };
