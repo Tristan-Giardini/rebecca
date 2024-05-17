@@ -8,8 +8,6 @@ const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const screenWidth = useSize();
 
-  console.log(screenWidth[0]);
-
   const handleOpen = () => {
     setMobileNav(true);
   };

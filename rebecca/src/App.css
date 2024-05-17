@@ -2,6 +2,7 @@ body {
   font-family: "Archivo", sans-serif;
   font-weight: 200;
   margin: 0px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {
@@ -127,6 +128,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: 10px;
+}
+
+.about-text {
   margin: 10px;
 }
 
