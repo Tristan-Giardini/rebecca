@@ -147,17 +147,6 @@ a:hover {
     }
   }
 
-  /* @keyframes dropDownWrapperReverse {
-    0% {
-      top: 100px;
-      transform: translateY(0);
-    }
-    100% {
-      top: 0px;
-      transform: translateY(0);
-    }
-  } */
-
   @keyframes dropDown {
     0% {
       top: -200px;
@@ -168,17 +157,6 @@ a:hover {
       transform: translateY(0);
     }
   }
-
-  /* @keyframes dropDownReverse {
-    0% {
-      top: -107px;
-      transform: translateY(0);
-    }
-    100% {
-      top: -300px;
-      transform: translateY(0);
-    }
-  } */
 
   .header-list {
     display: none;
@@ -247,6 +225,14 @@ a:hover {
     width: 100%;
     margin: 0px;
     margin-bottom: 30px;
+  }
+
+  .about-text {
+    margin: 0px;
+  }
+
+  .contact-wrapper {
+    margin: 0px;
   }
 
   .painting.series {
