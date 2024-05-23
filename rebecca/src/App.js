@@ -6,6 +6,7 @@ import Header from "./Header";
 import Collection from "./Collection";
 import Collections from "./assets/collection-data";
 import About from "./About";
+import NotFound from "./NotFound";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
