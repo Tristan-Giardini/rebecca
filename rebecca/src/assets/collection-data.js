@@ -24,12 +24,12 @@ const Collections = {
     {
       painting: nineteenninetysevena,
       className: "painting",
-      caption: `<i>1997: Currants</i>, acrylic on canvas, 9x12”, 2023`,
+      caption: `<i>1997: Currants</i>, acrylic on canvas, 9x12”, 2024`,
     },
     {
       painting: nineteenninetysevenb,
       className: "painting",
-      caption: `<i>1997: Relative</i>, acrylic on canvas, 9x12”, 2023`,
+      caption: `<i>1997: Relative</i>, acrylic on canvas, 9x12”, 2024`,
     },
     {
       painting: lonelymouthfull,
@@ -39,7 +39,7 @@ const Collections = {
     {
       painting: pulsefull,
       className: "painting",
-      caption: `<i>Pulse</i>, acrylic on canvas, 7x9”, 2023`,
+      caption: `<i>Pulse</i>, acrylic on canvas, 7x9”, 2024`,
     },
     {
       painting: softnessfades,
